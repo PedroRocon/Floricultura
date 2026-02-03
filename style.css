@@ -75,6 +75,7 @@ main h1 {
 /* ROSAS */
 .Card{
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     flex-basis: 50% - 10px;
     flex-grow: 300px;
@@ -103,7 +104,6 @@ main h1 {
     white-space: nowrap;
     transition: 0.5s ease;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     gap: 10px;
     background-color: rgba(255, 34, 34, 0.836);
