@@ -23,20 +23,23 @@ body{
 header{
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.315);
     text-align: center;
-    position: sticky;
-    top: 0;
 }
 header > h1{
     font-size: 3.5em;
 }
+/*   NAV    */
+nav{
+    width: 100%;
+    justify-content: space-between;
+}
 ul{
     background-color: gray;
     font-size: 1.3em;
-    height: 40px;
-    gap: 60px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0;
 }
 li{
     list-style-type: none;
@@ -48,6 +51,13 @@ li a {
 li a:hover{
     color: pink;
     transition: 1s ease;
+}
+
+@media (max-width: 700px){
+    nav ul{
+        flex-direction: column;
+        gap: 10px;
+    }
 }
 /*  MAIN       */
 main h1 {
@@ -71,6 +81,9 @@ main h1 {
     transition: 0.5s ease;
     margin: 0 auto;
     padding: 0px;
+}
+.Card input{
+    display: none;
 }
 .Foto{
     min-width: 220px;
@@ -99,7 +112,7 @@ main h1 {
 .Informação > h2{
     text-align: center;
 }
-.Card:hover .Informação{
+input[type="checkbox"]:checked ~ .Informação{
     max-width: 250px;
     height: 190px;
     padding: 20px;
