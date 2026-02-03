@@ -4,116 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <style>
-    * {
-    margin: 0;
-    padding: 0;
-}
-
-
-body{
-    background-color: rgb(182, 243, 182);
-    padding: 0px;
-    margin: 0px;
-
-}
-
-#Container{
-    background-color: white;
-    max-width: 1110px;
-    margin: auto;
-    margin-top: 0px;
-    
-}
-/*    HEADER     */
-header{
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.315);
-    text-align: center;
-    position: sticky;
-    top: 0;
-}
-header > h1{
-    font-size: 3.5em;
-}
-ul{
-    background-color: gray;
-    font-size: 1.3em;
-    height: 40px;
-    gap: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-li{
-    list-style-type: none;
-}
-li a {
-    text-decoration: none;
-    color: white;
-}
-li a:hover{
-    color: pink;
-    transition: 1s ease;
-}
-/*  MAIN       */
-main h1 {
-    text-align: center;
-}
-#Flores{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    
-}
-#Flores > h1{
-    text-align: center;
-}
-
-/* ROSAS */
-.Card{
-    display: flex;
-    justify-content: left;
-    width: 300px;
-    margin: 0 auto;
-    padding: 0px;
-}
-.Foto{
-    border-radius: 20px;
-    background-image: url(Imagens/Rosa-Modificada.png);
-    background-color: rgb(155, 79, 79);
-    background-size: cover;
-    background-position: center center;
-    height: 230px;
-    width: 350px;
-    padding: 0px;
-    overflow: hidden;
-    position: relative;
-}
-.Informação{
-    max-width: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-    transition: 0.5s ease;
-    padding:0px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    background-color: rgba(255, 34, 34, 0.836);
-    border-radius: 20px;
-}
-.Informação > h2{
-    text-align: center;
-}
-.Card:hover .Informação{
-    padding-top: 30px;
-    max-width: 350px;
-    max-height:230px ;
-    white-space: normal;
-}
-
-
-
-
-  </style>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -134,8 +24,11 @@ main h1 {
       <h1>Flores</h1>
       <div id="Flores">
 
-        <div class="Card">
-          <div class="Foto"></div>
+
+  
+        <!--  ROSAS   -->
+        <div class="Card"> 
+          <div class="Foto"><img src="Imagens/Rosa-Modificada.png" alt=""></div>
           <div class="Informação">
             <h2>Rosa Vermelha</h2>
             <p>Vermelha intensa e apaixonante, a rosa clássica que diz 'eu te amo' sem precisar de palavras.</p>
@@ -143,8 +36,10 @@ main h1 {
             <input type="button" value="Pedir" id="Botão">
           </div>
         </div>
+
+
          <div class="Card">
-          <div class="Foto"></div>
+          <div class="Foto"><img src="Imagens/Rosa-Modificada.png" alt=""></div>
           <div class="Informação">
             <p>Nome: Não Sei</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo pariatur incidunt eligendi fugit eaque voluptatibus debitis eum culpa architecto, quae, impedit quod provident asperiores corporis libero sit, placeat enim?</p>
@@ -152,8 +47,21 @@ main h1 {
             <input type="button" value="Pedir">
           </div>
         </div>
+
+
          <div class="Card">
-          <div class="Foto"></div>
+          <div class="Foto"><img src="Imagens/Rosa-Modificada.png" alt=""></div>
+          <div class="Informação">
+            <p>Nome: Não Sei</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo pariatur incidunt eligendi fugit eaque voluptatibus debitis eum culpa architecto, quae, impedit quod provident asperiores corporis libero sit, placeat enim?</p>
+            <span>R$ 9999999999</span>
+            <input type="button" value="Pedir">
+          </div>
+        </div>
+
+
+        <div class="Card">
+          <div class="Foto"><img src="Imagens/Rosa-Modificada.png" alt=""></div>
           <div class="Informação">
             <p>Nome: Não Sei</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis explicabo pariatur incidunt eligendi fugit eaque voluptatibus debitis eum culpa architecto, quae, impedit quod provident asperiores corporis libero sit, placeat enim?</p>
