@@ -154,16 +154,17 @@ input[type="checkbox"]:checked ~ .Informação{
     #Flores{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        align-content: center;
-        gap: 10pxpx;
+        justify-items: center;
+        gap: 16px;
         
     }
     .Card{
-        justify-content: center;
+        display: flex;
+        width: 100%;
         align-items: center;
     }
     .Foto{
+
        object-fit: cover;
     }
 
