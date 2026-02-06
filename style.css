@@ -73,6 +73,7 @@ main h1 {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     flex-basis: 50% - 10px;
     flex-grow: 300px;
     transition: 0.5s ease;
@@ -109,6 +110,9 @@ main h1 {
 .Informação > h2{
     text-align: center;
 }
+.Informação > p{
+    text-align: center;
+}
 input[type="checkbox"]:checked ~ .Informação{
     max-width: 250px;
     height: 140px;
@@ -117,7 +121,7 @@ input[type="checkbox"]:checked ~ .Informação{
 }
 
 
-@media (max-width: 700px){
+@media (max-width: 768px){
     nav ul{
         flex-direction: column;
         gap: 10px;
@@ -131,12 +135,11 @@ input[type="checkbox"]:checked ~ .Informação{
         
     }
     .Card{
-        
+        justify-content: center;
+        align-items: center;
     }
     .Foto{
-        border-radius: 20px;
-        height: 100px;
-        width: 100px;
+       
     }
 
 }
