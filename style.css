@@ -167,5 +167,8 @@ input[type="checkbox"]:checked ~ .Informação{
 
        object-fit: cover;
     }
+    #Container{
+        width: 100vw;
+    }
 
 }
