@@ -153,8 +153,7 @@ input[type="checkbox"]:checked ~ .Informação{
     }
     #Flores{
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-items: center;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
         gap: 16px;
         
     }
