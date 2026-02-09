@@ -184,7 +184,7 @@ input[type="checkbox"]:checked ~ .Informação{
     #Container{
         width: 100%;
         min-height: 100vh;
-        background-color: aqua;
+        background-color: rgb(104, 255, 142);
     }
     
     label{
