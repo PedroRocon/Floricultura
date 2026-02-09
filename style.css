@@ -70,7 +70,7 @@ li a {
     font-family: var(--font1);
 }
 li a:hover{
-    color: pink;
+    color: rgb(194, 107, 121);
     transition: 1s ease;
 }
 
