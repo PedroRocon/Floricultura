@@ -159,18 +159,24 @@ input[type="checkbox"]:checked ~ .Informação{
     }
     .Card{
         display: flex;
-        width: 100%;
+        max-width: 160px;
         align-items: center;
     }
     .Foto{
        object-fit: cover;
+       border-radius: 10px;
     }
     .Foto img{
-        width: 100%;
+        width: 190px;
+        height: auto;
     }
     #Container{
         width: 100%;
         background-color: aqua;
+    }
+    label{
+        width: 0px;
+        height: 0px;
     }
 
 }
