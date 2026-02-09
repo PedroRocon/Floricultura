@@ -162,26 +162,34 @@ input[type="checkbox"]:checked ~ .Informação{
     #Flores{
         display: flex;
         flex-wrap: wrap;
-        align-items: center;
+        justify-content: space-between;
+        gap: 10px;
     }
     .Card{
         display: flex;
+        flex-direction: column;
         width: 45%;
-        max-width: none;
         align-items: center;
     }
     .Foto{
        object-fit: cover;
        border-radius: 0px;
     }
-    
+    .Informação{
+      
+    }
+
     #Container{
         width: 100%;
         min-height: 100vh;
         background-color: aqua;
     }
+    
     label{
         display: flex;
+        height: auto;
+        max-height: none;
+        overflow: visible;
         justify-content: center;
     }
 }
