@@ -11,6 +11,11 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100%;
+    height: 100%;
 }
 
 
@@ -153,9 +158,8 @@ input[type="checkbox"]:checked ~ .Informação{
     }
     #Flores{
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 16px;
-        
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
     }
     .Card{
         display: flex;
@@ -164,7 +168,7 @@ input[type="checkbox"]:checked ~ .Informação{
     }
     .Foto{
        object-fit: cover;
-       border-radius: 10px;
+       border-radius: 0px;
     }
     .Foto img{
         width: 190px;
@@ -172,11 +176,10 @@ input[type="checkbox"]:checked ~ .Informação{
     }
     #Container{
         width: 100%;
+        min-height: 100vh;
         background-color: aqua;
     }
     label{
-        width: 0px;
-        height: 0px;
-    }
-
+        display: flex;
+        justify-content: center;
 }
