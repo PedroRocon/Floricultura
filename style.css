@@ -115,13 +115,22 @@ main h1 {
     min-width: 220px;
     height: 180px;
     flex-shrink: 0;
-    border-radius: 80px;
+   
     overflow: hidden;
 }
 .Foto img{
     width: 100%;
     height: 100%;
+     border-radius: 80px;
     object-fit: cover;
+}
+.conter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 190px;
+    flex: 1 1;
 }
 .Informação{
     max-width: 0px;
@@ -148,7 +157,7 @@ main h1 {
 }
 input[type="checkbox"]:checked ~ .Informação{
     max-width: 250px;
-    height: 140px;
+    height: 150px;
     padding: 20px;
     white-space: normal;
 }
@@ -159,11 +168,15 @@ input[type="checkbox"]:checked ~ .Informação{
         flex-direction: column;
         gap: 10px;
     }
+    html, body{
+    width: 100%;
+    min-height: 100vh;
+    }
     #Flores{
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
-        gap: 10px;
+        justify-content: space-around;
+        gap: 30px;
     }
     .Card{
         display: flex;
@@ -176,6 +189,7 @@ input[type="checkbox"]:checked ~ .Informação{
        object-fit: cover;
        border-radius: 0px;
     }
+    
     .Informação{
         display: flex;
         flex: 1;
@@ -189,8 +203,7 @@ input[type="checkbox"]:checked ~ .Informação{
     
     label{
         display: flex;
-        height: auto;
-        max-height: none;
+        width: 100px;
         overflow: visible;
         justify-content: center;
     }
