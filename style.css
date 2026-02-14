@@ -189,6 +189,12 @@ input[type="checkbox"]:checked ~ .Informação{
        object-fit: cover;
        border-radius: 0px;
     }
+    .conter{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        height: none;
+    }
     
     .Informação{
         display: flex;
