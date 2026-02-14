@@ -30,8 +30,8 @@ body{
 }
 
 #Container{
+    display: inline;
     background-color: #96fc96;
-    max-width: 1110px;
     margin: auto;
     margin-top: 0px;
     
@@ -115,7 +115,6 @@ main h1 {
     min-width: 220px;
     height: 180px;
     flex-shrink: 0;
-   
     overflow: hidden;
 }
 .Foto img{
@@ -123,14 +122,6 @@ main h1 {
     height: 100%;
      border-radius: 80px;
     object-fit: cover;
-}
-.conter{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 200px;
-    height: 190px;
-    flex: 1 1;
 }
 .Informação{
     max-width: 0px;
@@ -189,13 +180,6 @@ input[type="checkbox"]:checked ~ .Informação{
        object-fit: cover;
        border-radius: 0px;
     }
-    .conter{
-        display: flex;
-        flex-wrap: wrap;
-        width: 100%;
-        height: none;
-    }
-    
     .Informação{
         display: flex;
         flex: 1;
@@ -207,10 +191,5 @@ input[type="checkbox"]:checked ~ .Informação{
         background-color: rgb(104, 255, 142);
     }
     
-    label{
-        display: flex;
-        width: 100px;
-        overflow: visible;
-        justify-content: center;
-    }
+   
 }
