@@ -36,12 +36,12 @@ body{
     margin-top: 0px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
     padding-bottom: 10px;
-    
+    width: 1000px;
 }
 /*    HEADER     */
 header{
-    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.315);
     text-align: center;
     font-family: var(--font1);
 }
@@ -77,40 +77,45 @@ li a:hover{
     transition: 1s ease;
 }
 
-/*  MAIN       */
+/*  MAIN   */
 #topo{
     text-align: center;
 }
-#topo #info{
-    position: sticky;
-    top: 0;
-}
-main h1 {
-    width: 100%;
-    text-align: center;
-    font-size: 1.9em;
-    font-weight: bolder;
-    font-family: var(--font2);
-    background-color: rgb(247, 78, 78);
-    margin-bottom: 10px;
-}
-main #info{
+#topo input{
     padding: 6px;
     margin: 0px;
     font-weight: bolder;
     font-family: var(--font2);
     background-color: rgb(247, 78, 78);
     margin-bottom: 10px;
+    border-radius: 20px;
+    border-width: 0px;    
+}
+#topo h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bolder;
+    font-family: var(--font2);
+    background-color: rgb(247, 78, 78);
+    padding: 8px;
+    margin-bottom: 10px;
 }
 #Flores{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
     grid-gap: 20px;
     flex-wrap: wrap;
 }
-#Flores > h1{
+#Flores h1{
+    width: 100%;
     text-align: center;
+    font-size: 1.9em;
+    font-weight: bolder;
     font-family: var(--font2);
+    background-color: rgb(247, 78, 78);
+    border-radius: 20px;
+    padding: 8px;
+    margin-bottom: 10px;
 }
 
 /* GALERIA */
@@ -118,6 +123,7 @@ main #info{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    flex: 0 0 30%;
     align-items: center;
     justify-content: center;
     flex-basis: 50% - 10px;
@@ -126,21 +132,17 @@ main #info{
     margin: 0 auto;
     padding: 0px;
 }
-button{
-    margin: 0px;
-}
 .Card img{
     width: 100px;
     height: 100px;
     border-radius: 20px;
     object-fit: cover;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
 }
 .Informação{
-    max-width: 0;
-    overflow: hidden;
     white-space: nowrap;
     transition: 0.5s ease;
-    display: flex;
+    display: none;
     flex-direction: column;
     background-color: rgba(255, 34, 34, 0.836);
     border-radius: 20px;
@@ -154,9 +156,9 @@ button{
     font-family: var(--font1);
 }
 .Informação.ativa{
-    display: flex;
-    max-height: 500px;
+    display: block;
     padding: 10px;
+    max-height: 500px;
     overflow: hidden;
 }
 
@@ -172,16 +174,25 @@ button{
     }
     #Flores{
         display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+        padding: 20px;
+
     }
     .Card{
         display: flex;
         flex-direction: column;
         width: 45%;
         align-items: center;
+        text-align: center;
+    }
+    .Card img{
+        width: 100px;
+        height: 100px;
+        border-radius: 30px;
     }
     .Informação{
-        display: flex;
+        display: none;
         flex: 1;
     }
 

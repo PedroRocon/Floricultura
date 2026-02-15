@@ -1,4 +1,6 @@
 function Mostrarinfo(){
-    const Rosa = document.getElementById("Rosa");
-    Rosa.classList.toggle("ativa");
+    const info = document.querySelectorAll(".Informação");
+    info.forEach(function(info){
+        info.classList.toggle("ativa")
+    });
 }
