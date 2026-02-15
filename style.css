@@ -81,6 +81,10 @@ li a:hover{
 #topo{
     text-align: center;
 }
+#topo #info{
+    position: sticky;
+    top: 0;
+}
 main h1 {
     width: 100%;
     text-align: center;
