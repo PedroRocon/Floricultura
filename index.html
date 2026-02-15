@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang=pt-br">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"> defer </script>
 </head>
 <body>
   <div id="Container">
@@ -22,16 +23,17 @@
     </header>
     
     <main> 
-      <h1>Flores</h1>
+      <section id="topo">
+        <h1>Flores</h1>
+        <input type="button" value="Mostrar Informações" id="info">
+      </section>
       <div id="Flores">
+      
 
-
-  
         <!--  ROSAS   -->
         <div class="Card"> 
           <h1>Rosa</h1>
-          
-         <input type="checkbox" id="rosa"><label for="rosa" class="Foto"><img src="Imagens/Rosa-Modificada.png" alt=""></label>
+         <img src="Imagens/Rosa-Modificada.png" alt="">
           <div class="Informação">
             <p>Vermelha intensa e apaixonante, a rosa clássica que diz 'eu te amo' sem precisar de palavras.</p>
           </div>
@@ -39,8 +41,7 @@
          <!--  ORQUIDEA   -->
         <div class="Card"> 
           <h1>Orquídea</h1>
-         
-          <input type="checkbox" id="orquídea"><label for="orquídea" class="Foto"><img src="Imagens/Orquídea-modificada.jpg" alt=""></label>
+          <img src="Imagens/Orquídea-modificada.jpg" alt="">
           <div class="Informação">
             <p>Delicada na forma e poderosa na presença, a orquídea representa charme, requinte e exclusividade. Uma flor que impressiona em silêncio.</p>
           </div>
@@ -48,17 +49,15 @@
         <!--  LÍRIO   -->
         <div class="Card"> 
           <h1>Lírio</h1>
-          <input type="checkbox" id="lírio">
-          <label for="lírio" class="Foto"><img src="Imagens/Lírio-modificado.jpg" alt=""></label>
-          <div class="Informação">
+          <img src="Imagens/Lírio-modificado.jpg" alt="">
+          <div class="Informação" id="info1">
             <p>Laranja, vibrante e cheio de vida, o lírio transmite alegria e admiração, encantando com sua beleza marcante sem precisar de palavras.</p>
           </div>
         </div>
         <!--  GIRASOL   -->
         <div class="Card"> 
           <h1>Girasol</h1>
-          <input type="checkbox" id="girasol">
-          <label for="girasol" class="Foto"><img src="Imagens/Girasol-modificada.jpg" alt=""></label>
+          <img src="Imagens/Girasol-modificada.jpg" alt="">
           <div class="Informação">
             <p>Radiante e cheio de energia, o girassol simboliza alegria, otimismo e luz, levando calor e boas vibrações a qualquer ambiente.</p>
           </div>
@@ -66,8 +65,7 @@
         <!--  GERBERA   -->
          <div class="Card"> 
           <h1>Gérbera</h1>
-          <input type="checkbox" id="Gérbera">
-         <label for="Gérbera" class="Foto"><img src="Imagens/Gerbera-modificada.jpg" alt=""></label>
+          <img src="Imagens/Gerbera-modificada.jpg" alt="">
           <div class="Informação">
             <p>Colorida e vibrante, a gérbera simboliza alegria, leveza e espontaneidade, perfeita para espalhar boas energias e sorrisos.</p>
           </div>
@@ -75,8 +73,7 @@
         <!--  TULIPA   -->
          <div class="Card"> 
           <h1>Tulipa</h1>
-          <input type="checkbox" id="Tulipa">
-          <label for="Tulipa" class="Foto"><img src="Imagens/tulipa-modificada.jpg" alt=""></label>
+          <img src="Imagens/tulipa-modificada.jpg" alt="">
           <div class="Informação">
             <p>Elegante e atemporal, a tulipa simboliza amor, delicadeza e renovação, encantando pela simplicidade e beleza de cada detalhe.</p>
           </div>
