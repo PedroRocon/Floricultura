@@ -170,6 +170,11 @@ li a:hover{
 }
 
 /*   BUQUES   */
+#buques{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #buques h1{
     width: 100%;
     text-align: center;
@@ -180,7 +185,40 @@ li a:hover{
     padding: 8px;
     margin-bottom: 10px;
 }
-
+#slidershow{
+    width: 700px;
+    height: 400px;
+    overflow: hidden;
+}
+.middle{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.navigation{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.barra{
+    width: 50px;
+    height: 10px;
+    border: 2px solid black;
+    margin: 6px;
+    cursor: pointer;
+}
+#buq{
+    width: 100%;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bolder;
+    font-family: var(--font2);
+    background-color: rgb(247, 78, 78);
+    padding: 8px;
+    margin-bottom: 10px;
+}
 
 @media (max-width: 768px){
     nav ul{
