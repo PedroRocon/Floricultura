@@ -30,7 +30,7 @@ body{
 }
 
 #Container{
-    display: inline;
+    display: inline-block;
     background-color: #96fc96;
     margin: auto;
     margin-top: 0px;
@@ -103,8 +103,11 @@ li a:hover{
 }
 #Flores{
     display: flex;
-    grid-gap: 20px;
+    gap: 20px;
+    padding: 20px;
     flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
 }
 #Flores h1{
     width: 100%;
@@ -123,28 +126,32 @@ li a:hover{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 0 0 30%;
+    flex: 1 1 300px;
     align-items: center;
-    justify-content: center;
-    flex-basis: 50% - 10px;
-    flex-grow: 300px;
+    justify-content: flex-start;
+    flex-grow: 1;
     transition: 0.5s ease;
     margin: 0 auto;
-    padding: 0px;
+    padding: 10px;
+    min-height: 200px;
 }
 .Card img{
     width: 100px;
     height: 100px;
     border-radius: 20px;
+    margin-bottom: 5px;
     object-fit: cover;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.315);
 }
 .Informação{
-    white-space: nowrap;
+    white-space: normal;
     transition: 0.5s ease;
-    display: none;
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
     flex-direction: column;
-    background-color: rgba(255, 34, 34, 0.836);
+    background-color: rgba(245, 100, 100, 0.836);
     border-radius: 20px;
 }
 .Informação > h2{
@@ -156,10 +163,9 @@ li a:hover{
     font-family: var(--font1);
 }
 .Informação.ativa{
-    display: block;
-    padding: 10px;
-    max-height: 500px;
-    overflow: hidden;
+   max-height: 500px;
+   opacity: 1;
+   padding: 10px;
 }
 
 
@@ -174,15 +180,16 @@ li a:hover{
     }
     #Flores{
         display: flex;
-        grid-template-columns: 1fr 1fr;
-        gap: 25px;
+        flex-wrap: wrap;
+        gap: 20px;
         padding: 20px;
+        justify-content: center;
 
     }
     .Card{
-        display: flex;
+        flex: calc(50% - 10px);
         flex-direction: column;
-        width: 45%;
+        width: auto;
         align-items: center;
         text-align: center;
     }
@@ -192,7 +199,7 @@ li a:hover{
         border-radius: 30px;
     }
     .Informação{
-        display: none;
+        
         flex: 1;
     }
 
