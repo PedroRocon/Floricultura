@@ -189,15 +189,15 @@ li a:hover{
 /*   SLIDER    */
 .slider{
     margin: 0 auto;
-    width: 255px;
-    height: 362px;
+    width: 800px;
+    height: 400px;
     overflow: hidden;
 }
 
 .slides{
     display: flex;
     width: 400%;
-    height: 362px;
+    height: 400px;
 }
 
 .slides input{
@@ -207,7 +207,52 @@ li a:hover{
 .slide{
     width: 25%;
     position: relative;
+    
 }
+
+.slide img{
+    width: 800px;
+    border-radius: 20px;
+    
+}
+
+.manual-navigation{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
+.manual-btn{
+    border: 2px solid rgb(0, 0, 0);
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s ease;
+}
+.manual-btn:not(:last-child){
+    margin-right: 25px;
+}
+.manual-btn:hover{
+    background-color: white;
+}
+
+#r1:checked ~ .first{
+    margin-left: 0;
+}
+#r2:checked ~ .first{
+    margin-left: -25%;
+}
+#r3:checked ~ .first{
+    margin-left: -50%;
+}
+#r4:checked ~ .first{
+    margin-left: -75%;
+}
+
+
+
+
 
 @media (max-width: 768px){
     nav ul{
@@ -245,6 +290,26 @@ li a:hover{
         width: 100%;
         min-height: 100vh;
     }
+
+    /*  SLIDE  */
+
+    .slider{
+    margin: 0 auto;
+    width: 300px;
+    height: 150px;
+    overflow: hidden;
+    }
+    .slide img{
+    width: 300px;
+    
+    }
+    .manual-navigation{
+    position: absolute;
+    width: 300px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+}
     
    
 }
