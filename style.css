@@ -112,7 +112,7 @@ li a:hover{
 #Flores h1{
     width: 100%;
     text-align: center;
-    font-size: 1.9em;
+    font-size: 1.4em;
     font-weight: bolder;
     font-family: var(--font2);
     background-color: rgb(247, 78, 78);
@@ -120,6 +120,7 @@ li a:hover{
     padding: 8px;
     margin-bottom: 10px;
 }
+
 
 /* GALERIA */
 .Card{
@@ -195,15 +196,13 @@ li a:hover{
         flex-wrap: wrap;
         gap: 20px;
         padding: 20px;
-        justify-content: center;
+        justify-content: space-around;
 
     }
     .Card{
-        flex: 1 1 ;
-        flex-direction: column;
-        width: auto;
-        align-items: center;
-        text-align: center;
+        flex: 1 1 45%;
+        max-width: 49%;
+        
     }
     .Card img{
         width: 100px;
@@ -218,7 +217,6 @@ li a:hover{
     #Container{
         width: 100%;
         min-height: 100vh;
-        background-color: rgba(251, 255, 7, 0.993);
     }
     
    
