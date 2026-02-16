@@ -199,7 +199,7 @@ li a:hover{
 
     }
     .Card{
-        flex: calc(50% - 16px);
+        flex: calc(50% - 20px);
         flex-direction: column;
         width: auto;
         align-items: center;
@@ -218,7 +218,7 @@ li a:hover{
     #Container{
         width: 100%;
         min-height: 100vh;
-        background-color: rgb(113, 246, 255);
+        background-color: rgb(104, 255, 142);
     }
     
    
