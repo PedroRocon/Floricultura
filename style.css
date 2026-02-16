@@ -136,8 +136,8 @@ li a:hover{
     min-height: 200px;
 }
 .Card img{
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 20px;
     margin-bottom: 5px;
     object-fit: cover;
@@ -168,6 +168,18 @@ li a:hover{
    padding: 10px;
 }
 
+/*   BUQUES   */
+#buques h1{
+      width: 100%;
+    text-align: center;
+    font-size: 1.9em;
+    font-weight: bolder;
+    font-family: var(--font2);
+    background-color: rgb(247, 78, 78);
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
 
 @media (max-width: 768px){
     nav ul{
@@ -187,7 +199,7 @@ li a:hover{
 
     }
     .Card{
-        flex: calc(50% - 10px);
+        flex: calc(50% - 16px);
         flex-direction: column;
         width: auto;
         align-items: center;
