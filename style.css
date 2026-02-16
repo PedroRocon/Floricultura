@@ -191,7 +191,7 @@ li a:hover{
     min-height: 100vh;
     }
     #Flores{
-        display: flex;
+        flex-direction: row;
         flex-wrap: wrap;
         gap: 20px;
         padding: 20px;
