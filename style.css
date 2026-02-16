@@ -199,7 +199,7 @@ li a:hover{
 
     }
     .Card{
-        flex: calc(50% - 20px);
+        flex: 1 1 ;
         flex-direction: column;
         width: auto;
         align-items: center;
