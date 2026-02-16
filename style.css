@@ -170,7 +170,7 @@ li a:hover{
 
 /*   BUQUES   */
 #buques h1{
-      width: 100%;
+    width: 100%;
     text-align: center;
     font-size: 1.9em;
     font-weight: bolder;
@@ -218,7 +218,7 @@ li a:hover{
     #Container{
         width: 100%;
         min-height: 100vh;
-        background-color: rgb(240, 138, 201);
+        background-color: rgba(251, 255, 7, 0.993);
     }
     
    
