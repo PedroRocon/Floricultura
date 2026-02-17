@@ -295,12 +295,12 @@ li a:hover{
 
     .slider{
     margin: 0 auto;
-    width: 300px;
-    height: 150px;
+    width: 350px;
+    height: 175px;
     overflow: hidden;
     }
     .slide img{
-    width: 300px;
+    width: 350px;
     
     }
     .manual-navigation{
