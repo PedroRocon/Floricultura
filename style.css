@@ -267,6 +267,7 @@ li a:hover{
     border-radius: 10px;
     cursor: pointer;
     transition: 1s ease;
+    display: none;
 }
 .manual-btn:not(:last-child){
     margin-right: 40px;
@@ -294,6 +295,7 @@ li a:hover{
     border-radius: 10px;
     cursor: pointer;
     transition: 1s;
+    display: none;
 }
 
 .navigation-auto{
