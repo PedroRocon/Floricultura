@@ -94,17 +94,34 @@ body{
 }
 
 @media (max-width: 768px){
-       nav ul{
+    nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 10px;
         padding-left: 40px;
     }
+
+    #Galeria .Foto {
+        align-items: center;
+        max-width: 100%; 
+    }
+    #Galeria .Foto img {
+        width: 165px;
+        height: 280px;
+        border-radius: 30px;
+    }
+
+    .Foto .valor {
+        margin: 3px;
+    }
     .Foto{
         width: 100px;
     }
+    .Foto .ladoesquerdo{
+        width: 173px;
+    }
     .Foto img{
-        width: 100px;
+        width: 173px;
         height: 100px;
         border-radius: 30px;
         margin-left: 5px;
@@ -118,6 +135,10 @@ body{
     }
     .Foto p{
         margin: 4px;
-        font-size: 21px;
+        font-size: 17.5px;
+    }
+    #Galeria{
+        width: 100%;
+        min-height: 100vh;
     }
 }
