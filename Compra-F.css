@@ -1,0 +1,45 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+#Galeria{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+#Galeria .Foto{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    word-wrap: break-word;
+    overflow-wrap:break-word ;
+    width: 700px;
+    height: 350px;
+    padding: 10px;
+    background-color: aqua;
+
+}
+.Foto p{
+    text-align: center;
+    word-wrap: break-word;
+}
+.Foto a{
+    display: block;
+    color: black;
+    font-size: large;
+    font-weight: bold;
+    background-color: white;
+    list-style-type: none;
+    font-style: none;
+    text-decoration: none;
+    border-radius: 20px;
+}
+#Galeria .Foto img{
+    object-fit: cover;
+    height: 290px;
+    width: 200px;
+    margin-bottom: 20px;
+}
