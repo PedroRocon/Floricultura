@@ -58,6 +58,7 @@ body{
     overflow-wrap:break-word ;
     width: 500px;
     height: 350px;
+    padding: 0px;
 }
 .Foto p{
     text-align: start;
@@ -83,6 +84,9 @@ body{
     font-family: var(--font2);
     font-weight: bold;
     font-size: 1.8em;
+}
+.Foto .ladodireito{
+
 }
 #Galeria .Foto img{
     object-fit: cover;
