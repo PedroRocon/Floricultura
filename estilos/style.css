@@ -43,7 +43,7 @@ body{
 }
 /*    HEADER     */
 header{
-    background-image: url(Imagens/Margarida-Modificada.jpg);
+    background-image: url(../Imagens/Margarida-Modificada.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
