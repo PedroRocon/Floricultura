@@ -53,7 +53,8 @@ li a:hover{
     justify-content: center;
     align-items: center;
     gap: 20px;
-    background-color: rgb(214, 165, 102);;
+    background-color: rgb(130, 250, 140);;
+    padding-bottom: 20px;
 }
 
 /*  FOTOS   */
@@ -99,7 +100,7 @@ li a:hover{
     color: red;
 }
 .ladoesquerdo #salmao{
-    color: rgb(247, 135, 135);
+    color: rgb(250, 128, 128);
 }
 .ladoesquerdo #azul{
     color: rgb(16, 45, 211);
@@ -121,19 +122,23 @@ li a:hover{
     }
     .Foto img{
         width: 150px;
-        height: 200px;
+        height: 260px;
     }
     .Foto h1{
         font-size: 20px;
+        margin: 3px;
     }
     .Foto h2{
         font-size: 15px;
+        margin: 2px;
     }
     .Foto p{
         font-size: smaller;
+        margin: 3px;
     }
     .Foto .mensagem{
-        font-size: 15px;
+        font-size: 14px;
+        margin: 3px;
     }
     .Foto li{
         font-size: smaller;
