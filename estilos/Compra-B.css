@@ -56,6 +56,8 @@ li a:hover{
     background-color: white;
     padding-bottom: 20px;
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.39);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px
 }
 
 /*  FOTOS   */
@@ -111,6 +113,10 @@ li a:hover{
 }
 
 @media (max-width: 768px){
+    body{
+        padding: 0px;
+        margin: 0px;
+    }
      nav ul {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
