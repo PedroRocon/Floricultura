@@ -12,7 +12,7 @@ startslider();
 function startslider(){
     setInterval(function(){
         nextslide();
-    }, 7000)
+    }, 5000)
 }
 
 function nextslide(){
