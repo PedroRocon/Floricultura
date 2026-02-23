@@ -89,6 +89,9 @@ li a:hover{
     text-decoration: none;
     border-radius: 20px;
 }
+.Foto .ladodireito{
+    margin-left: 10px;
+}
 .Foto .ladodireito h2{
     font-family: var(--font2);
     font-weight: bold;
@@ -101,7 +104,10 @@ li a:hover{
     margin-bottom: 20px;
     margin-right:8px;
     border-radius: 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.308);
 }
+
+
 
 @media (max-width: 768px){
     body{

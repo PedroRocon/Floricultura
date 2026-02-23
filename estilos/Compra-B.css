@@ -74,6 +74,8 @@ li a:hover{
 .Foto img{
     border-radius: 20px;
     height: 320px;
+    margin-bottom: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.308);
 }
 .Foto a{
     display: block;
